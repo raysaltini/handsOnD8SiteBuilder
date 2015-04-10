@@ -37,6 +37,7 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
 	</head>
 
 	<body>
@@ -48,7 +49,7 @@
 				<section>
                     <section data-background-image="images/background.png" data-background-size="contain">
                         <h1>Hands On With Drupal 8</h1>
-                        <h2>Part 1, Site Building</h2>
+                        <h2>8.x Internals for site builders</h2>
                     </section>
 				</section>
                 <section>
@@ -82,6 +83,12 @@
                             Development Consultancy. We're hiring! You can talk to me after the session, tell me about your
                             project, or talk to anyone at the booth outside.
                         </aside>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Follow along</h1>
+                        <p>http://socketwench.github.io/handsOnD8SiteBuilder</p>
                     </section>
                 </section>
                 <section>
@@ -157,13 +164,41 @@
                     <section data-background-image="images/background.png" data-background-size="contain">
                         <h1>Installation</h1>
                     </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs4.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs5.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs6.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>New Requirements</h2>
+                        <img src="images/sysReqs7.png">
+                    </section>
                     <section>
                         <h2>Download Drupal</h2>
                         <p>https://www.drupal.org/project/drupal</p>
                         <img src="images/downloadDrupal.png">
                     </section>
                     <section>
-                        <h2>Using Dev Desktop</h2>
+                        <h2>Installing Dev Desktop</h2>
                         <p>https://www.acquia.com/downloads</p>
                         <img src="images/downloadDevDesktop.png">
                     </section>
@@ -214,15 +249,587 @@
                         <h2>Using the Install Wizard</h2>
                         <img src="images/install7.png">
                     </section>
-                </section>
-                <section>
                     <section data-background-image="images/background.png" data-background-size="contain">
-                        <h1>Users and Permissions</h1>
+                        <h1>Your Turn!</h1>
+                        <p>Pair up!</p>
+                        <p>If neither of you have a web server installed, choose a hosting provider</p>
+                        <p>Install the latest Drupal 8 Beta</p>
+                        <h2>Time: 15 minutes</h2>
                     </section>
                 </section>
                 <section>
                     <section data-background-image="images/background.png" data-background-size="contain">
                         <h1>Structuring Content</h1>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/content1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/content2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/content3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/content4.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/nodeTypes1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/nodeTypes2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/nodeTypes3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/nodeTypes4.png">
+                    </section>
+                    <section>
+                        <h2>Adding Node Types</h2>
+                        <img src="images/addContentType.png">
+                    </section>
+                    <section>
+                        <h1>Nothing looks that different</h1>
+                        <h2 class="fragment">Yep, we need to go deeper</h2>
+                    </section>
+                    <section>
+                        <h2>Features Module</h2>
+                        <p>Saves configuration to code</p>
+                        <p>Works okay in Drupal 7</p>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>A Tale of Two Entity Kinds</h1>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage4.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage5.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage6.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage7.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/d7Storage8.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/dbSplit1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/dbSplit2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/dbSplit3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Configuration Entities</h2>
+                        <p>Administrator-built structures</p>
+                        <img src="images/configEntity1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Configuration Entities</h2>
+                        <p>Administrator-built structures</p>
+                        <img src="images/configEntity2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Configuration Entities</h2>
+                        <p>Administrator-built structures</p>
+                        <img src="images/configEntity3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Configuration Entities</h2>
+                        <p>Administrator-built structures</p>
+                        <img src="images/configEntity4.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Content Entities</h2>
+                        <p>User created & instantiated objects</p>
+                        <img src="images/contentEntity1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Content Entities</h2>
+                        <p>User created & instantiated objects</p>
+                        <img src="images/contentEntity2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Content Entities</h2>
+                        <p>User created & instantiated objects</p>
+                        <img src="images/contentEntity3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Content Entities</h2>
+                        <p>User created & instantiated objects</p>
+                        <img src="images/contentEntity4.png">
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Managing Configuration</h1>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/manageConfig1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/manageConfig2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/manageConfig3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/manageConfig4.png">
+                    </section>
+                    <section>
+                        <h2>Config Management UI</h2>
+                        <p>Admin > Development > Configuration Management</p>
+                        <img src="images/configManageUI.png">
+                    </section>
+                    <section>
+                        <h2>Single Export</h2>
+                        <img src="images/singleExport.png">
+                    </section>
+                    <section>
+                        <h1>Your Turn</h1>
+                        <p>Create a new content (node) type</p>
+                        <p>Export your new content type</p>
+                        <p>Make changes to your content type</p>
+                        <p>Export your content type again, what changed?</p>
+                        <h2>Time: 10 minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Fields</h1>
+                    </section>
+                    <section data-transition="none">
+                        <h2>Nodes and Fields</h2>
+                        <img src="images/fields1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Nodes and Fields</h2>
+                        <img src="images/fields2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Nodes and Fields</h2>
+                        <img src="images/fields3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Nodes and Fields</h2>
+                        <img src="images/fields4.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Fields and the Database</h2>
+                        <img src="images/fieldStorage1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Fields and the Database</h2>
+                        <img src="images/fieldStorage2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Fields and the Database</h2>
+                        <img src="images/fieldStorage3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Fields and the Database</h2>
+                        <img src="images/fieldStorage4.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Fields and the Database</h2>
+                        <img src="images/fieldStorage5.png">
+                    </section>
+                    <section>
+                        <h2>Field names no longer global!</h2>
+                        <p>Tied to their owning entity type</p>
+                        <code>entity_type/field_name</code>
+                    </section>
+                    <section>
+                        <h2>Sharing Fields in 8.x</h2>
+                        <p>No longer sharable between entity types (node, user)</p>
+                        <p>Sharable between bundles (article, story)</p>
+                    </section>
+                    <section>
+                        <h2>New Field Types</h2>
+                        <p>Comments</p>
+                        <p>Entity Reference</p>
+                        <p>Link</p>
+                        <p>Date</p>
+                        <p>Email</p>
+                        <p>Telephone</p>
+                    </section>
+                    <section>
+                        <h2>Fields are Plugins!</h2>
+                        <p class="fragment">Not a module, not a Wordpress "Plugin"</p>
+                        <p class="fragment">Programming pattern -- Object-oriented info hook</p>
+                        <img src="images/fieldPlugin.png">
+                    </section>
+                    <section>
+                        <h2>Other Plugins</h2>
+                        <img src="images/otherPlugins.png">
+                        <p class="fragment">And many others...</p>
+                    </section>
+                    <section>
+                        <h2>Fields are also Config Entities</h2>
+                        <p>Exportable to *.yml</p>
+                        <p>Migrated from site to site</p>
+                    </section>
+                    <section>
+                        <h1>Your Turn!</h1>
+                        <p>Create a new field for your content type</p>
+                        <p>Re-export your content type, did anything change?</p>
+                        <p>Explore the export interface, find <strong>two</strong> places to export your field</p>
+                        <h2>Time: 10 minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Users</h1>
+                    </section>
+                    <section>
+                        <h2>Managing Users</h2>
+                        <p>Admin > People</p>
+                        <p>Superuser account created on install</p>
+                    </section>
+                    <section>
+                        <img src="images/manageUsers.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/addUser1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/addUser2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/addUser3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/addUser4.png">
+                    </section>
+                    <section>
+                        <h2>Bulk Managing Users</h2>
+                        <p>add/remove Administrator role</p>
+                        <p>Block, unblock, or cancel users</p>
+                    </section>
+                    <section>
+                        <img src="images/userBulkManagement.png">
+                    </section>
+                    <section>
+                        <h2>Account Settings</h2>
+                        <p>Admin > Configure > People > Account Settings</p>
+                        <p>Welcome messages, email prefs, field management</p>
+                    </section>
+                    <section>
+                        <h2>Account Form Display</h2>
+                        <p>New in 8</p>
+                        <p>Control order of fields on user edit form</p>
+                    </section>
+                    <section>
+                        <img src="images/userForm.png">
+                    </section>
+                    <section>
+                        <h2>Exporting Account Settings</h2>
+                        <p>Stored as simple config</p>
+                    </section>
+                    <section>
+                        <img src="images/exportUserSettings.png">
+                    </section>
+                    <section>
+                        <h1>Your Turn</h1>
+                        <p>Create a new user</p>
+                        <p>Use bulk operations to assign it Administrator role</p>
+                        <p>Create a custom field for the user, export it</p>
+                        <p>Answer: Are users content or config?</p>
+                        <h2>Time: 7 Minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Roles and Permissions</h1>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/roles1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/roles2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/roles3.png">
+                    </section>
+                    <section>
+                        <h2>Three rules for permissions</h2>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/perms1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/perms2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/perms3.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/perms4.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/perms5.png">
+                    </section>
+                    <section>
+                        <h2>Managing Roles</h2>
+                        <p>Admin > People > "Roles" tab</p>
+                        <p>Roles are now config entities</p>
+                        <p>No UI changes from 7.x</p>
+                    </section>
+                    <section>
+                        <h2>Managing Permissions</h2>
+                        <p>Admin > People > "Permissions" tab</p>
+                        <p>Set checkbox = Grants permission</p>
+                        <p>Clear checkbox = Doesn't grant, doesn't deny</p>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/permissions1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/permissions2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Roles</h2>
+                        <img src="images/defaultRoles1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Roles</h2>
+                        <img src="images/defaultRoles2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Roles</h2>
+                        <img src="images/defaultRoles3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Roles</h2>
+                        <img src="images/defaultRoles4.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Roles</h2>
+                        <img src="images/defaultRoles5.png">
+                    </section>
+                    <section>
+                        <h1>Your turn</h1>
+                        <p>Create a "content editor" role</p>
+                        <p>Assign it node creation/editing rights</p>
+                        <p>Create a content editor user and test!</p>
+                        <p>Export your permissions</p>
+                        <h2>Time: 8 minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Views</h1>
+                    </section>
+                    <section>
+                        <h2>Now in core!</h2>
+                        <p>No more waiting to build real sites</p>
+                        <p>Core's own UI uses views</p>
+                    </section>
+                    <section>
+                        <h2>Views UI</h2>
+                        <p>Largely unchanged from 7.x</p>
+                    </section>
+                    <section>
+                        <h1>MOAR CONTENT HERE</h1>
+                    </section>
+                    <section>
+                        <h1>Your turn</h1>
+                        <p>Create demo content using your new content type</p>
+                        <p>Create a "tracker" tabular view</p>
+                        <p>Export the view configuration</p>
+                        <p>Make changes to the view, re-export, observe changes</p>
+                        <h2>Time: 10 minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Modules</h1>
+                    </section>
+                    <section>
+                        <h2>Yes! They still exist!</h2>
+                        <p class="fragment">You'll need less of them for a functional site</p>
+                        <p class="fragment">Vastly different programming makes porting difficult</p>
+                        <p class="fragment">Installation and config management is different</p>
+                    </section>
+                    <section>
+                        <h2>Installing Modules</h2>
+                        <p>No built-in FTP downloader</p>
+                        <p>Use drush 7.x or download manually</p>
+                        <p>Please use version control</p>
+                    </section>
+                    <section data-transition="none">
+                        <h2>No really, use version control</h2>
+                        <p class="fragment">Many hosting providers have it baked in</p>
+                        <img src="images/drupalgeddon1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>No really, use version control</h2>
+                        <p>Many hosting providers have it baked in</p>
+                        <img src="images/drupalgeddon2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>No really, use version control</h2>
+                        <p>Many hosting providers have it baked in</p>
+                        <img src="images/drupalgeddon3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Where do contrib modules go?</h2>
+                        <img src="images/modulesDir1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Where do contrib modules go?</h2>
+                        <img src="images/modulesDir2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Where do contrib modules go?</h2>
+                        <img src="images/modulesDir3.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Where do contrib modules go?</h2>
+                        <img src="images/modulesDir4.png">
+                    </section>
+                    <section>
+                        <h2>That's...confusing</h2>
+                        <p class="fragment">Yeah, it's the <em>opposite</em> of 7.x</p>
+                        <p class="fragment"><code>core/</code> directory makes upgrading easier</p>
+                        <p class="fragment">There is no <code>sites/all</code> directory</p>
+                    </section>
+                    <section>
+                        <h2>Installing on Simplytest.me</h2>
+                        <p>Not really possible</p>
+                        <p>Create new instance, select module to install</p>
+                    </section>
+                    <section>
+                        <h2>Installing on Pantheon</h2>
+                        <p>Click "SFTP" in your dashboard</p>
+                        <p>Use your favorite SFTP client</p>
+                    </section>
+                    <section>
+                        <h2>Contrib Modules and Configuration</h2>
+                        <p>Any properly designed module will have exportable config</p>
+                        <p>Saving directly to database tables is strongly discouraged</p>
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Module Configuration</h2>
+                        <img src="images/defaultConfig1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Module Configuration</h2>
+                        <img src="images/defaultConfig2.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Default Module Configuration</h2>
+                        <img src="images/defaultConfig3.png">
+                    </section>
+                    <section>
+                        <h2>Default Config YML</h2>
+                        <p>Often exported from Drupal itself</p>
+                        <p>Makes creating "features" modules easy!</p>
+                    </section>
+                    <section>
+                        <h2>Flag Module for 8.x</h2>
+                        <p>https://www.drupal.org/project/flag</p>
+                        <p>Download the 8.x-4.x-dev version</p>
+                    </section>
+                    <section>
+                        <h1>Your turn</h1>
+                        <p>Download and install Flag module</p>
+                        <p>Create a new Flag: Admin > Structure > Flags</p>
+                        <p>Export your new Flag</p>
+                        <h2>Time: 15  minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>Themes</h1>
+                    </section>
+                    <section>
+                        <h2>Themes are a lot like modules</h2>
+                        <p>Install manually or with drush</p>
+                    </section>
+                    <section data-transition="none">
+                        <h2>Where do themes go?</h2>
+                        <img src="images/themeDir1.png">
+                    </section>
+                    <section data-transition="none">
+                        <h2>Where do themes go?</h2>
+                        <img src="images/themeDir2.png">
+                    </section>
+                    <section>
+                        <h2>Okay, just like modules</h2>
+                        <p class="fragment">It's the opposite of 7.x, but...</p>
+                        <p class="fragment">...it's much easier to find.</p>
+                    </section>
+                    <section>
+                        <h2>So what's different?</h2>
+                        <p class="fragment">Well, lots, actually.</p>
+                    </section>
+                    <section data-background-image="images/twig.png" data-background-size="contain">
+                        <h2>Twig In Core</h2>
+                        <p class="fragment">Replaces PHPtemplate</p>
+                        <p class="fragment">Common outside of Drupal</p>
+                        <p class="fragment">Fast; compiles down to PHP</p>
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/twigTheme1.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/twigTheme2.png">
+                    </section>
+                    <section data-transition="none">
+                        <img src="images/twigTheme3.png">
+                    </section>
+                    <section>
+                        <h2>Where can I learn more about Twig?</h2>
+                        <p class="fragment">http://twig.sensiolabs.org/documentation</p>
+                        <p class="fragment">https://www.drupal.org/theme-guide/8</p>
+                    </section>
+                    <section>
+                        <h2>Other Front-End Improvements</h2>
+                        <p>Latest JQuery and Backbone.js</p>
+                        <p>Accessible and responsive</p>
+                    </section>
+                    <section>
+                        <h1>Your turn</h1>
+                        <p>Download and install Omega 8.x</p>
+                        <h2>Time: 5 minutes</h2>
+                    </section>
+                </section>
+                <section>
+                    <section data-background-image="images/background.png" data-background-size="contain">
+                        <h1>CMI</h1>
+                    </section>
+                    <section>
+                        <h2>Module Provided Configuration</h2>
+                        <p>No Features required!</p>
+                        <p>Store exported YML to:</p>
+                        <code>&lt;my_module&gt;/config/install</code>
+                    </section>
+                    <section>
+                        <h1>MOAR CONTENT HERE</h1>
+                    </section>
+                    <section>
+                        <h1>Your turn</h1>
+                        <p>Create a second Drupal site</p>
+                        <p>Import configuration from your first site into your second</p>
+                        <h2>Time:  minutes</h2>
                     </section>
                 </section>
                 <section>
