@@ -66,7 +66,7 @@
                         <div>
                             <br>
                         </div>
-                        <div>"That's wench, not wrench"</div>
+                        <div class="fragment grow visible">"That's wench, not wrench"</div>
                     </section>
                     <section>
                         <h2>Module Co-maintainer For</h2>
@@ -75,7 +75,7 @@
                         <p class="fragment grow visible">Examples</p>
                     </section>
                     <section>
-                        <h2>Drupal Developer with</h2>
+                        <h2>Drupal Developer With</h2>
                         <img src="images/blinkReactionLogo.png" />
                         <p class="fragment">(We're hiring!)</p>
                         <aside class="notes">
@@ -87,32 +87,32 @@
                 </section>
                 <section>
                     <section data-background-image="images/background.png" data-background-size="contain">
-                        <h1>Follow along</h1>
+                        <h1>Follow Along</h1>
                         <p>http://socketwench.github.io/handsOnD8SiteBuilder</p>
                     </section>
                 </section>
                 <section>
                     <section data-background-image="images/background.png" data-background-size="contain">
-                        <h1>How different is D8?</h1>
+                        <h1>How Different is D8?</h1>
                     </section>
                     <section>
-                        <h2>Not that different!</h2>
+                        <h2>Not That Different!</h2>
                         <p class="fragment">(If you're a site builder)</p>
                     </section>
                     <section>
-                        <h2>Many of the concepts are the same</h2>
+                        <h2>Many of the Concepts are the Same</h2>
                         <p>Users and Permissions</p>
                         <p>Structuring Content</p>
                         <p>Modules</p>
                     </section>
                     <section>
-                        <h2>And it's even easier!</h2>
+                        <h2>And it's Even Easier!</h2>
                         <p>Views in core</p>
                         <p>Better, out-of-the-box i18n Support</p>
-                        <p class="fragment">(Much less modules to install, yay!)</p>
+                        <p class="fragment">(Fewer modules to install, yay!)</p>
                     </section>
                     <section>
-                        <h2>Where it's different</h2>
+                        <h2>Where it's Different</h2>
                         <p>Writing modules</p>
                         <p>Writing themes</p>
                         <p>Upgrading core and modules</p>
@@ -121,10 +121,10 @@
                 </section>
                 <section>
                     <section data-background-image="images/background.png" data-background-size="contain">
-                        <h1>Getting a development environment</h1>
+                        <h1>Getting a Development Environment</h1>
                     </section>
                     <section>
-                        <h2>Many options</h2>
+                        <h2>Many Options</h2>
                         <p class="fragment grow visible">Local installation</p>
                         <p class="fragment grow visible">Virtualization</p>
                         <p class="fragment grow visible">Hosting Providers</p>
@@ -290,7 +290,7 @@
                         <img src="images/addContentType.png">
                     </section>
                     <section>
-                        <h1>Nothing looks that different</h1>
+                        <h1>Nothing Looks that Different</h1>
                         <h2 class="fragment">Yep, we need to go deeper</h2>
                     </section>
                     <section>
@@ -556,22 +556,35 @@
                         <img src="images/roles3.png">
                     </section>
                     <section>
-                        <h2>Three rules for permissions</h2>
+                        <h2>Where do Permissions Come From?</h2>
+                        <p class="fragment">And is it still the same?</p>
                     </section>
                     <section data-transition="none">
-                        <img src="images/perms1.png">
+                        <img src="images/hookPerm1.png">
                     </section>
                     <section data-transition="none">
-                        <img src="images/perms2.png">
+                        <img src="images/hookPerm2.png">
                     </section>
                     <section data-transition="none">
-                        <img src="images/perms3.png">
+                        <img src="images/hookPerm3.png">
                     </section>
                     <section data-transition="none">
-                        <img src="images/perms4.png">
+                        <img src="images/hookPerm4.png">
                     </section>
                     <section data-transition="none">
-                        <img src="images/perms5.png">
+                        <img src="images/hookPerm5.png">
+                    </section>
+                    <section>
+                        <h2>flag.permissions.yml</h2>
+                        <pre><code>
+administer flags:
+ title: 'Administer Flags'
+ decription: 'Define and manage Flags and Flag settings.'
+ restrict access: TRUE
+
+permission_callbacks:
+ - Drupal\flag\FlagPermissions::permissions
+                        </code></pre>
                     </section>
                     <section>
                         <h2>Managing Roles</h2>
@@ -612,7 +625,12 @@
                         <img src="images/defaultRoles5.png">
                     </section>
                     <section>
-                        <h1>Your turn</h1>
+                        <h2>So What Are Roles?</h2>
+                        <img class="fragment" src="images/roleConfigEntity.png">
+                        <p class="fragment">Exportable, Migratable</p>
+                    </section>
+                    <section>
+                        <h1>Your Turn!</h1>
                         <p>Create a "content editor" role</p>
                         <p>Assign it node creation/editing rights</p>
                         <p>Answer: How do you export permissions?</p>
@@ -635,7 +653,7 @@
                         <img src="images/viewsUI.png">
                     </section>
                     <section>
-                        <h2>No more overrides!</h2>
+                        <h2>No More Overrides!</h2>
                         <p class="fragment grow visible">Core's own UI uses views</p>
                         <p class="fragment">Makes modifying core pages easy and safe</p>
                     </section>
@@ -651,7 +669,7 @@
                         <img src="images/viewExport.png">
                     </section>
                     <section>
-                        <h1>Your turn</h1>
+                        <h1>Your Turn!</h1>
                         <p>Create demo content using your new content type</p>
                         <p>Beginners: Create a new view for your content type</p>
                         <p>Modify one of core's default views</p>
@@ -664,7 +682,7 @@
                         <h1>Modules</h1>
                     </section>
                     <section>
-                        <h2>Yes! They still exist!</h2>
+                        <h2>Yes! They Still Exist!</h2>
                         <p class="fragment">You'll need less of them for a functional site</p>
                         <p class="fragment">Vastly different programming makes porting difficult</p>
                         <p class="fragment">Installation and config management is different</p>
@@ -676,38 +694,38 @@
                         <p>Please use version control</p>
                     </section>
                     <section data-transition="none">
-                        <h2>No really, use version control</h2>
+                        <h2>No Neally, Use Version Control</h2>
                         <p class="fragment">Many hosting providers have it baked in</p>
                         <img src="images/drupalgeddon1.png">
                     </section>
                     <section data-transition="none">
-                        <h2>No really, use version control</h2>
+                        <h2>No Neally, Use Version Control</h2>
                         <p>Many hosting providers have it baked in</p>
                         <img src="images/drupalgeddon2.png">
                     </section>
                     <section data-transition="none">
-                        <h2>No really, use version control</h2>
+                        <h2>No Neally, Use Version Control</h2>
                         <p>Many hosting providers have it baked in</p>
                         <img src="images/drupalgeddon3.png">
                     </section>
                     <section data-transition="none">
-                        <h2>Where do contrib modules go?</h2>
+                        <h2>No Neally, Use Version Control</h2>
                         <img src="images/modulesDir1.png">
                     </section>
                     <section data-transition="none">
-                        <h2>Where do contrib modules go?</h2>
+                        <h2>Where do Contrib Modules Go?</h2>
                         <img src="images/modulesDir2.png">
                     </section>
                     <section data-transition="none">
-                        <h2>Where do contrib modules go?</h2>
+                        <h2>Where do Contrib Modules Go?</h2>
                         <img src="images/modulesDir3.png">
                     </section>
                     <section data-transition="none">
-                        <h2>Where do contrib modules go?</h2>
+                        <h2>Where do Contrib Modules Go?</h2>
                         <img src="images/modulesDir4.png">
                     </section>
                     <section>
-                        <h2>That's...confusing</h2>
+                        <h2>That's...Confusing</h2>
                         <p class="fragment">Yeah, it's the <em>opposite</em> of 7.x</p>
                         <p class="fragment"><code>core/</code> directory makes upgrading easier</p>
                         <p class="fragment">There is no <code>sites/all</code> directory</p>
@@ -750,7 +768,7 @@
                         <p>Download the 8.x-4.x-dev version</p>
                     </section>
                     <section>
-                        <h1>Your turn</h1>
+                        <h1>Your Turn!</h1>
                         <p>Download and install Flag module</p>
                         <p>Create a new Flag: Admin > Structure > Flags</p>
                         <p>Export your new Flag</p>
@@ -766,20 +784,20 @@
                         <p>Install manually or with drush</p>
                     </section>
                     <section data-transition="none">
-                        <h2>Where do themes go?</h2>
+                        <h2>Where do Themes Go?</h2>
                         <img src="images/themeDir1.png">
                     </section>
                     <section data-transition="none">
-                        <h2>Where do themes go?</h2>
+                        <h2>Where do Themes Go?</h2>
                         <img src="images/themeDir2.png">
                     </section>
                     <section>
-                        <h2>Okay, just like modules</h2>
+                        <h2>Okay, Just Like Modules</h2>
                         <p class="fragment">It's the opposite of 7.x, but...</p>
                         <p class="fragment">...it's much easier to find.</p>
                     </section>
                     <section>
-                        <h2>So what's different?</h2>
+                        <h2>So What's Different?</h2>
                         <p class="fragment">Well, lots, actually.</p>
                     </section>
                     <section data-background-image="images/twig.png" data-background-size="contain">
@@ -798,7 +816,7 @@
                         <img src="images/twigTheme3.png">
                     </section>
                     <section>
-                        <h2>Where can I learn more about Twig?</h2>
+                        <h2>Where Can I Learn More About Twig?</h2>
                         <p class="fragment">http://twig.sensiolabs.org/documentation</p>
                         <p class="fragment">https://www.drupal.org/theme-guide/8</p>
                     </section>
@@ -808,7 +826,7 @@
                         <p>Accessible and responsive</p>
                     </section>
                     <section>
-                        <h1>Your turn</h1>
+                        <h1>Your Turn!</h1>
                         <p>Download and install Omega 8.x</p>
                         <h2>Time: 5 minutes</h2>
                     </section>
@@ -838,7 +856,7 @@
                         </code></pre>
                     </section>
                     <section>
-                        <h2>*.module file</h2>
+                        <h2>*.module File</h2>
                         <p>Required, even if empty</p>
                     </section>
                     <section>
@@ -847,7 +865,7 @@
                         <code>drupal generate:module</code>
                     </section>
                     <section>
-                        <h2>Perform a full export</h2>
+                        <h2>Perform a Full Export</h2>
                         <p>Filenames are significant!</p>
                         <p>Much easier to build, then export</p>
                     </section>
@@ -909,7 +927,7 @@
                         <p>Error message will identify missing configuration</p>
                     </section>
                     <section>
-                        <h1>Your turn</h1>
+                        <h1>Your Turn!</h1>
                         <p>Perform a full export</p>
                         <p>Build a new feature module based on your custom content type</p>
                         <p>Delete your custom configuration</p>
