@@ -404,7 +404,7 @@
                     </section>
                     <section>
                         <h2>Full Export</h2>
-                        <p>Creates a *.zip of all site configurations</p>
+                        <p>Creates a *.tar.gz of all site configurations</p>
                         <p>Easiest way to get export filnames</p>
                     </section>
                     <section>
@@ -820,17 +820,101 @@
                     <section>
                         <h2>Module Provided Configuration</h2>
                         <p>No Features required!</p>
-                        <p>Store exported YML to:</p>
-                        <code>&lt;my_module&gt;/config/install</code>
                     </section>
                     <section>
-                        <h1>MOAR CONTENT HERE</h1>
+                        <h2>Basic Feature Module</h2>
+                        <img src="images/modulesFiles.png">
+                    </section>
+                    <section>
+                        <h2>Basic *.info.yml</h2>
+                        <pre><code>
+                            name: My Blog
+                            type: module
+                            description: My Awesome Blog Feature
+                            core: 8.x
+                            package: Features
+                            dependencies:
+                             - link
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>*.module file</h2>
+                        <p>Required, even if empty</p>
+                    </section>
+                    <section>
+                        <h2>Generating Modules</h2>
+                        <img src="images/drupalConsole.png">
+                        <code>drupal generate:module</code>
+                    </section>
+                    <section>
+                        <h2>Perform a full export</h2>
+                        <p>Filenames are significant!</p>
+                        <p>Much easier to build, then export</p>
+                    </section>
+                    <section>
+                        <h2>Finding Files</h2>
+                        <p>Node type ID, field ID, etc.</p>
+                        <p>Start with the biggest piece, and look for dependencies</p>
+                    </section>
+                    <section>
+                        <h2>Dependencies Export Entry</h2>
+                        <pre><code>
+                            uuid: 88ba4ba6-2694-4154-9048-72fb7fdb4e4c
+                            langcode: en
+                            status: true
+                            dependencies:
+                                config:
+                                    - field.storage.node.field_see_also
+                                    - node.type.blog
+                                module:
+                                    - link
+                            id: node.blog.field_see_also
+                            field_name: field_see_also
+                            entity_type: node
+                            bundle: blog
+                            label: 'See also'
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>Prepairing Export Files</h2>
+                        <p>Each configuration assigned a UUID</p>
+                        <p>Remove if you need unique IDs between dev/test/prod</p>
+                    </section>
+                    <section>
+                        <h2>node.type.blog.yml</h2>
+                        <pre><code>
+                            uuid: cf4c20f8-213a-46fc-8a06-6f1036203231
+                            langcode: en
+                            status: true
+                            dependencies:
+                            module:
+                             - menu_ui
+                            third_party_settings:
+                            menu_ui:
+                            available_menus:
+                             - main
+                            parent: 'main:'
+                            name: Blog
+                            type: blog
+                            description: ''
+                            help: ''
+                            new_revision: false
+                            preview_mode: 1
+                            display_submitted: true
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>Failing Meet Dependencies</h2>
+                        <p>Will halt module enabling</p>
+                        <p>Error message will identify missing configuration</p>
                     </section>
                     <section>
                         <h1>Your turn</h1>
-                        <p>Create a second Drupal site</p>
-                        <p>Import configuration from your first site into your second</p>
-                        <h2>Time:  minutes</h2>
+                        <p>Perform a full export</p>
+                        <p>Build a new feature module based on your custom content type</p>
+                        <p>Delete your custom configuration</p>
+                        <p>Upload and enable your custom module</p>
+                        <h2>Time: 20 minutes</h2>
                     </section>
                 </section>
                 <section>
